@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20180720122737) do
+=======
+ActiveRecord::Schema.define(version: 20180720122309) do
+>>>>>>> 1171924189708dd0f4ea400d9190c5cd534fc4f7
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -22,10 +26,17 @@ ActiveRecord::Schema.define(version: 20180720122737) do
   create_table "posts", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
+<<<<<<< HEAD
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "category_id"
     t.string   "post_status"
+=======
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.integer  "category_id"
+    t.string   "published_status"
+>>>>>>> 1171924189708dd0f4ea400d9190c5cd534fc4f7
   end
 
 end
